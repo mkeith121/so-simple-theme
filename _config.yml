@@ -1,11 +1,12 @@
 # Site wide configuration
 
-title: Site Title
+title: Mark's Blog
 locale: en_US
-description: Describe your website here.
+description: This is a curated snippet of my life as a developer!
 logo: site-logo.png
 search: true
 url: http://localhost:4000
+comments: true
 
 # Jekyll configuration
 
@@ -48,15 +49,15 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  email: you@email.com
-  disqus-shortname:
-  twitter: #username
+  name: Mark Richard Keith
+  avatar: bio-photo-mk.jpg
+  email: mark.r.keith@gmail.com
+  disqus-shortname: markrichardkeithsblog
+  twitter: mkeith121
   facebook: #username
-  github: #username
+  github: mkeith121
   stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: markrkeith
   instagram: #username
   flickr: #username
   tumblr: #username
