@@ -10,6 +10,7 @@ image:
   creditlink: www.markrichardkeith.com
 comments: true
 share: true
+search_omit: false
 ---
 
 This article is intended to explore the primary differences between Function Declarations and Function Expressions. By no means is this intended to be an exhaustive or authoritative resource for each and every nuance of the topic, but I hope that it helps to provide clarity. Additionally explored in this article is the idea of "Hoisting" as it relates to functions.  
@@ -18,7 +19,7 @@ This article is intended to explore the primary differences between Function Dec
 
 A function declaration defines a named or anonymous function with specified parameters. It does not involve variable assignment. An important idea about function declarations is that they are not executed immediately. Rather, function declarations are "saved" and will be executed later in the program when they are invoked or called. Function declarations MUST begin with the word "function".
 
-####Types of Function Declarations:
+#### Types of Function Declarations:
 
 **Named Function Declaration:** 
 {% highlight html %}
@@ -54,7 +55,8 @@ I actually don't know of a good use case for an anonymous function declaration..
 {% endraw %}
 {% endhighlight %} 
 
-####Hoisting Characteristics:
+#### Hoisting Characteristics:
+
 Function declarations are ALWAYS hoisted to the top of the JavaScript scope in which they are contained by the JavaScript interpreter. In fact, function declarations are hoisted as an entire function body ABOVE variable declarations. 
 
 One other thing to note about the function declaration's hoisting characteristics (and this pertains to hoisting in general) is that it is stacked under any previously hoisted function declarations. That is to say, if the same named function is declared twice, the function located closest to the bottom of the page will be on the outside of the "stack" and will be the function that is accessible to the code below it.
@@ -111,7 +113,7 @@ See the below code for a before and after of simple function declaration hoistin
 
 A function expression typically defines a function as part of a larger expression syntax. In plain English, a function definition is usually assigned to a variable. As such, a function assigned to a variable is significantly more portable than a function declaration. It can be passed as an argument to other functions or used as a callback (in it's anonymous form as well) in other functions.  
 
-####Types of Function Expressions:
+#### Types of Function Expressions:
 
 **Named Function Expression:** 
 {% highlight html %}
@@ -160,7 +162,7 @@ A function expression typically defines a function as part of a larger expressio
 {% endhighlight %}
 *^^Function Expressions like this one (which, on the surface look a lot like an anonymous function declaration) are, in fact, a common example of a function expression. As such, the hoisting characteristics are as follows:*
 
-####Hoisting Characteristics:
+#### Hoisting Characteristics:
 The variable declarations of function expressions are, in fact, hoisted to the top of the scope in which they are contained. This may sound similar to function declarations, but the important distinction is that the BODY of the function expression remains where it is defined. The variable declaration, in fact, is hoisted to the top of the scope (directly under any and all function declarations) and are set to a value of "undefined" until invoked. See below for an illustration: 
 
 **Before:**
