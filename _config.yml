@@ -5,9 +5,9 @@ locale: en_US
 description: This is a curated snippet of my life as a developer!
 logo: site-logo.png
 search: true
-url: http://markrichardkeith.com
+url: http://localhost:4000
 comments: true
-
+# http://markrichardkeith.com
 # Jekyll configuration
 
 permalink:   /:categories/:title/
