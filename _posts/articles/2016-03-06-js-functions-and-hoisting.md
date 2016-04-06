@@ -163,7 +163,7 @@ A function expression typically defines a function as part of a larger expressio
 *^^Function Expressions like this one (which, on the surface look a lot like an anonymous function declaration) are, in fact, a common example of a function expression. As such, the hoisting characteristics are as follows:*
 
 #### Hoisting Characteristics:
-The variable declarations of function expressions are, in fact, hoisted to the top of the scope in which they are contained. This may sound similar to function declarations, but the important distinction is that the BODY of the function expression remains where it is defined. The variable declaration, in fact, is hoisted to the top of the scope (directly under any and all function declarations) and are set to a value of "undefined" until invoked. See below for an illustration: 
+The variable declarations of function expressions are, in fact, hoisted to the top of the scope in which they are contained. This may sound similar to function declarations, but the important distinction is that the BODY of the function expression remains where it is defined. The variable declaration, in fact, is hoisted to the top of the scope (directly under any and all function declarations) and is set to a value of "undefined" until invoked. See below for an illustration: 
 
 **Before:**
 {% highlight html %}
